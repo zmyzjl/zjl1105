@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>张佳龙and张曼玉</title>
+
+    <link rel="stylesheet" href="css/张曼玉.css">
+    <!-- 为了减少代码量，这个案例用到vue的语法 -->
+    <script type="text/javascript" src="js/vue.js"></script>
+    <style>
+        p span>a{
+            text-align: center;
+            width: 100px;
+            height:50px ;
+            line-height:50px;
+            display: inline-block;
+            text-decoration: none;
+            color:rgb(251, 109, 96);
+            font-weight: 700;
+             display: block;
+            height: 20%;
+        }
+        img{
+            height: 230px;
+            width: 200px;
+            padding: 20px 520px 20px 768px;
+            margin: -100px 41px 50px 90px;
+           display: inline-block;
+        }
+       
+/* autostart="true" */
+    </style>
+</head>
+
+<body>
+    <audio class="audio" autoplay="autoplay" controls="controls" loop>
+        <source src="music\love.mp3"/>
+    </audio>
+            <!-- <source src="\music\陈初浔 - 世界这么大还是遇见你（温柔女版）.mp3"/> -->
+            
+       
+    <p><span><a href="爱心.html">爱心表白</a></span></p>
+    <p><span><a href="https://cf.qq.com/main.shtml">cf官网</a></span></p>
+    <p><span><a href="https://v.qq.com/channel/choice?channel_2022=1">腾讯视频</a></span></p>
+    <p>
+        <span> <a href="love.html">爱心</a></span>
+    </p>
+     <div class="container"> 
+       
+        <!-- --d是CSS的自定义属性 -->
+         <div class="love" v-for="item in 67" :style="{'--d':(item*-1)*0.3}">
+            <div class="love-hor">
+                <div class="love-ver">
+                    <div class="love-text">I LOVE YOU {{item}}</div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+ <img src="img/微信图片_20221110174713.jpg" alt="">
+ 
+
+</body>
+
+</html>
+
+<script>
+    new Vue({
+        el:'.container'
+    })
+</script>
